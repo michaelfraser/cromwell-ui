@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { registerUser, clearMessages } from "./userSlice";
+import { registerUser, clearMessages } from "../redux/userSlice";
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -24,10 +24,19 @@ export default function RegisterPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+  
     if (isLogin) {
+      // Simulating a login API call or logic
       console.log("Logging in with:", { email, password });
-      // Add login logic here if needed
+  
+      // Assuming a successful login (replace this with actual login logic)
+      const loginSuccess = true; // Replace with actual authentication success condition
+  
+      if (loginSuccess) {
+        navigate("/landing");
+      } else {
+        console.error("Login failed.");
+      }
     } else {
       dispatch(registerUser({ name, email, password }))
         .unwrap()

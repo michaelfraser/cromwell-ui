@@ -4,12 +4,7 @@ const initialState = {
   isAuthenticated: !!localStorage.getItem("authToken"), // Check token existence on initialization
 };
 
-console.log('initialState=' + initialState.isAuthenticated);
-
 export default function authReducer(state = initialState, action) {
-  console.log("Action received in authReducer:", action);
-  console.log('initialState2=' + initialState.isAuthenticated);
-
   switch (action.type) {
     case "LOGIN_SUCCESS":
       return {

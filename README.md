@@ -1,6 +1,6 @@
 # Cromwell UI
 
-This is a repository for the front end part of the project, which is a React application.
+This is a repository for the front end part of the project, which is a React application.  This document has been tested with Mac OS Monteray.
 
 ## Pre-requisites
 
@@ -12,7 +12,7 @@ This is a repository for the front end part of the project, which is a React app
 
 To ease the setup for the project. The React application will run in a Docker container.
 
-There are a number of useful commands which have been abstracted into a `Makefile`.  To see a list of useful commands run `make` and a list of commands similar to the below should be displayed.
+There are a number of useful commands which have been abstracted into a `Makefile`.  To see a list of useful commands run `make` and a list of commands similar to the below should be displayed.  If you are struggling with running the `make` command then you can view the file and workout what commands to run by hand.
 
 ```text
 help                           This help.
